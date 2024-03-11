@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Stripe</title>
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+
+    <h1>For Stripe App</h1>
+
+    <form method="POST" onsubmit="makePayment(event)">
+        <fieldset id="form-set">
+            <input id="product-name" value="Red Shirt" />
+            <input id="product-amount" value="23" />
+            <input id="product-quantity" value="3" />
+            <button type="submit">Buy</button>
+        </fieldset>
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+</html>
